@@ -1,0 +1,187 @@
+#image{
+
+    border-radius: 20px;
+    position: relative;
+    left: 100px;
+    top: -100px;
+
+}
+
+#element{
+
+  color: #00f0e0;
+  background-color: #081b29;
+  font-weight: bold;
+  font-size: 52px;
+  text-align: start;
+  position: relative;
+    top: -100px;
+    right: 100px;
+
+}
+
+#full{
+
+    font-size: 58px;
+    position: relative;
+    top: -100px;
+    right: 100px;
+}
+
+
+
+
+#para{
+
+    font-size: 1.5rem;
+ 
+}
+
+.color-blue {
+  color: blue;
+}
+
+
+#resume-btns{
+
+  color: white;
+  background-color: blue;
+ height: 3rem;
+ width: 10rem;
+ border-radius: 5px;
+ border: none;
+ font-weight: bold;
+ position: relative;
+ top: -100px;
+ left: -50px;
+ 
+    
+ 
+}
+
+#resume-btns:hover{
+
+  background-color: orange;
+
+}
+
+mb-2 {
+  margin-bottom: 0.5rem; /* Adjust the value as needed */
+  font-size: 1em; /* Adjust the font size as needed */
+  color: #333; /* Adjust the color as needed */
+}
+
+.line-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.animated-line {
+  stroke: #081b29;
+  stroke-width: 2;
+  fill: none;
+}
+
+.line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s ease forwards;
+}
+
+.point {
+  fill: #081b29;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+#linkedin {
+  height: 40px; /* Increase the height to make the icon perfect */
+  width: 40px; /* Make the width the same as the height for a perfect circle */
+  background-color: transparent; /* Set the background color to transparent */
+  border: 2px solid #00f0e0; /* Add a yellow border */
+  border-radius: 50%; /* Apply border-radius to make it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  padding: 7px; /* Add padding to create a gap between the border and icon */
+  
+  color: #00f0e0;;
+  
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.3s ease;
+}
+
+
+
+#icons{
+
+   color: blue;
+}
+
+
+#linkedin:hover {
+  color: #00f0e0;
+  background-color: 
+ /* Change border color on hover */
+ /* Change the icon color on hover (LinkedIn blue) */
+}
+
+
+
+#resume-btn{
+
+    position: relative;
+    top: -100px;
+    left: -100px;
+    right: 100px;
+}
+
+
+
+
+
+
+
+.about-text {
+    position: relative;
+  }
+  
+  .about-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* Adjust the position to align with the text */
+    width: 0%;
+    height: 4px; /* Adjust the height of the animated line as needed */
+    background-color: #333; /* Set the initial background color */
+    animation: expandLine 1s forwards; /* Animation with keyframes */
+  }
+  
+  @keyframes expandLine {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  

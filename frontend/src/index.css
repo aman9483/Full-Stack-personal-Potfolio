@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@100;200;300;400&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+
+
+
+
+body {
+  background-color: #081b29;
+  overflow-x: hidden;
+}
+
+.nav {
+  z-index: 10;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline-black {
+  /* background-image: linear-gradient(transparent, transparent), linear-gradient(#F2C, rgb(60, 34, 255)) */
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#000, #fff);
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+  line-height: 1.2;
+}
+
+.portfolio,
+.contact {
+  margin-top: 8%;
+}
+
+.experience {
+  margin-top: 12%;
+}
+
+
+.nav-links {
+  text-underline-offset: 1rem;
+}
+
+
+@media screen and (max-width: 900px) {
+
+  
+
+  .about,
+  .contact,
+  .portfolio,
+  .experience,
+  .home {
+    text-align: center;
+    height: 100%;
+
+
+  }
+
+ .home  #element{
+
+    margin-left: 200px;
+    font-size: 30px;
+    
+  }
+
+   .home #full{ 
+
+    
+
+      margin-top: 200px;
+      margin-left: 190px;
+      font-size: 26px;
+      line-height: 70px;
+  }
+
+  .home #resume-btn{
+
+     margin-left: 50px;
+     width: 7rem;
+     
+  }
+
+  .home #resume-btns{
+
+    margin-left: 200px;
+    width: 7rem;
+   position: relative;
+   top: -147px;
+    
+ }
+  
+
+  .about,
+  .portfolio,
+  .experience {
+    margin-top: 10%;
+  }
+
+  .home img {
+    margin-top: 25%;
+  }
+
+
+  .small-screen {
+    display: block;
+  }
+
+  .big-screen {
+    display: block;
+    margin-left: -200px;
+    border-radius: 50%;
+    width: 20px;
+    height: 270px;
+  }
+
+  .gap-8 {
+    gap: 4rem;
+  }
+
+  .home h2 {
+    font-size: 2.7rem;
+    line-height: 3rem;
+    margin-top: 7%;
+  }
+
+  .portfolio-btn {
+    margin: auto;
+  }
+
+  .px-12 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+}
+
+#resume-btn{
+
+    color: white;
+    background: linear-gradient(to top, #b2193f 0%, #e52b2b 100%);
+   height: 3rem;
+   width: 10rem;
+   border-radius: 5px;
+   border: none;
+   position: relative;
+   top: -56px;
+   font-weight: bold;
+   left: 200px;
+}
+
+#resume-btn:hover{
+
+  background: linear-gradient(to top, #1930b2 0%, #5a2be5 100%);
+  transition: 2s;
+     
+}
+
+#full{
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
+  margin-left: -20px;
+}
+
+#h1{
+
+  font-family: 'Smokum', cursive;
+  font-size: 2.5rem;
+  
+
+
+}
+
+#element{
+
+  color: white;
+  font-size: 2rem;
+}
+
+.big-screen{
+
+   width: 25rem;
+
+}
